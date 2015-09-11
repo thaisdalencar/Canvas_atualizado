@@ -1,0 +1,93 @@
+\hypertarget{classLogin}{\section{Login Class Reference}
+\label{classLogin}\index{Login@{Login}}
+}
+
+
+Soliciata a realização do login e logout.  
+
+
+Inheritance diagram for Login\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLogin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLogin_a1c32d6f7816f8912e52bb554035fbf14}{\hyperlink{classLogin_a1c32d6f7816f8912e52bb554035fbf14}{\-\_\-\-\_\-construct} ()}\label{classLogin_a1c32d6f7816f8912e52bb554035fbf14}
+
+\begin{DoxyCompactList}\small\item\em Chama a biblioteca U\-R\-L do codeigniter. \end{DoxyCompactList}\item 
+\hyperlink{classLogin_a2eed7119960cf8499981ed4c3678345e}{index} ()
+\begin{DoxyCompactList}\small\item\em Analisa se existe sessão aberta. \end{DoxyCompactList}\item 
+\hyperlink{classLogin_a8a46e12700d878082ecb6a42bda5be9b}{try\-Login} ()
+\begin{DoxyCompactList}\small\item\em Realiza o login. \end{DoxyCompactList}\item 
+\hyperlink{classLogin_ae939c3bb65c459e67058c4dd5910aa56}{log\-Out} ()
+\begin{DoxyCompactList}\small\item\em Realiza o logout da sessão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Soliciata a realização do login e logout. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classLogin_a2eed7119960cf8499981ed4c3678345e}{\index{Login@{Login}!index@{index}}
+\index{index@{index}!Login@{Login}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}Login\-::index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLogin_a2eed7119960cf8499981ed4c3678345e}
+
+
+Analisa se existe sessão aberta. 
+
+Chama a biblioteca Session do Codeigniter.
+
+Caso não exista sessão aberta é redirecionado para a página de login. 
+\begin{DoxyParams}{Parameters}
+{\em logged} & \\
+\hline
+\end{DoxyParams}
+caso a sessão esteja iniciada redireciona para a página principal.
+
+Carrega a login\-\_\-model.
+
+Recebe o email da login\-\_\-model.
+
+Analisa o privilegio do usuario. \hypertarget{classLogin_ae939c3bb65c459e67058c4dd5910aa56}{\index{Login@{Login}!log\-Out@{log\-Out}}
+\index{log\-Out@{log\-Out}!Login@{Login}}
+\subsubsection[{log\-Out}]{\setlength{\rightskip}{0pt plus 5cm}Login\-::log\-Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLogin_ae939c3bb65c459e67058c4dd5910aa56}
+
+
+Realiza o logout da sessão. 
+
+Chama a biblioteca Session.
+
+Destroy a sessão.
+
+Redireciona para a página de login. \hypertarget{classLogin_a8a46e12700d878082ecb6a42bda5be9b}{\index{Login@{Login}!try\-Login@{try\-Login}}
+\index{try\-Login@{try\-Login}!Login@{Login}}
+\subsubsection[{try\-Login}]{\setlength{\rightskip}{0pt plus 5cm}Login\-::try\-Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLogin_a8a46e12700d878082ecb6a42bda5be9b}
+
+
+Realiza o login. 
+
+Checa se o email e senha informado estão conforme os padrões para os mesmo.
+
+Caso estejam redirecionam para a login\-\_\-model, passaso o email e senha informados.
+
+Se o banco retornar True, para a vefiricação do login no banco, o usuario é redirecionado para a página inicial.
+
+Caso retorne false, o usuario é redirecionado para a página de login. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+application/controllers/\hyperlink{login_8php}{login.\-php}\end{DoxyCompactItemize}

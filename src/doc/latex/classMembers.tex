@@ -1,0 +1,155 @@
+\hypertarget{classMembers}{\section{Members Class Reference}
+\label{classMembers}\index{Members@{Members}}
+}
+
+
+Mostra, cadastra, edita, apaga e valida os usuarios.  
+
+
+Inheritance diagram for Members\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMembers}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMembers_a6b8071cbd5837e99c283880ea9fdb695}{\hyperlink{classMembers_a6b8071cbd5837e99c283880ea9fdb695}{\-\_\-\-\_\-construct} ()}\label{classMembers_a6b8071cbd5837e99c283880ea9fdb695}
+
+\begin{DoxyCompactList}\small\item\em Chama a bibilioteca U\-R\-L do codeigniter. \end{DoxyCompactList}\item 
+\hyperlink{classMembers_a97543c7a9581814294ca85ccba384b64}{get\-All} (\$msg=N\-U\-L\-L)
+\item 
+\hyperlink{classMembers_ac2012deacee8545968300b8790b17664}{add\-Member} ()
+\begin{DoxyCompactList}\small\item\em Redireciona para a view de cadastro de novos membros. \end{DoxyCompactList}\item 
+\hyperlink{classMembers_a82f4446426e827d31bb951375ce64511}{validate\-Member} ()
+\begin{DoxyCompactList}\small\item\em Analisa se os dados informados no cadastro de novos membros são validos. \end{DoxyCompactList}\item 
+\hyperlink{classMembers_a587c1356d4e780d41a96cdbbee9c7fa9}{edit} (\$login)
+\item 
+\hyperlink{classMembers_a51f276a9b719cfb75b76c74806d2ece1}{validate\-Update} (\$login)
+\item 
+\hyperlink{classMembers_a2d5709b313f19375a6642d93b99c3661}{delete} (\$login)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mostra, cadastra, edita, apaga e valida os usuarios. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMembers_ac2012deacee8545968300b8790b17664}{\index{Members@{Members}!add\-Member@{add\-Member}}
+\index{add\-Member@{add\-Member}!Members@{Members}}
+\subsubsection[{add\-Member}]{\setlength{\rightskip}{0pt plus 5cm}Members\-::add\-Member (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMembers_ac2012deacee8545968300b8790b17664}
+
+
+Redireciona para a view de cadastro de novos membros. 
+
+Verifica se a sessão está aberta.
+
+Caso esteja, carrega a login\-\_\-model.
+
+Verifica o privilegio do usuário.
+
+Caso Admin, redireciona para a view registration\-\_\-form\-\_\-view, para realizar o novo cadastro.
+
+Caso manager, redireciona para a view registration\-\_\-form\-\_\-view, para realizar o novo cadastro.
+
+Caso Worker, não permite adicionar novas membros. \hypertarget{classMembers_a2d5709b313f19375a6642d93b99c3661}{\index{Members@{Members}!delete@{delete}}
+\index{delete@{delete}!Members@{Members}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}Members\-::delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$login}
+\end{DoxyParamCaption}
+)}}\label{classMembers_a2d5709b313f19375a6642d93b99c3661}
+Responsavel por deletar cadastros. 
+\begin{DoxyParams}{Parameters}
+{\em login} & \\
+\hline
+\end{DoxyParams}
+Verifica se a sessão está aberta.
+
+Caso esteja, carrega a login\-\_\-model.
+
+Checa o privilegio do usuário. Verificasse usuário possue privilegio igual ou superior ou que deseja deletar. Caso não possua, é mostrado uma mensagem de alerta. caso possua, a members\-\_\-model é carregada, se o cadastro for deletado corretamente é mostrado uma mensagem de sucesso. \hypertarget{classMembers_a587c1356d4e780d41a96cdbbee9c7fa9}{\index{Members@{Members}!edit@{edit}}
+\index{edit@{edit}!Members@{Members}}
+\subsubsection[{edit}]{\setlength{\rightskip}{0pt plus 5cm}Members\-::edit (
+\begin{DoxyParamCaption}
+\item[{}]{\$login}
+\end{DoxyParamCaption}
+)}}\label{classMembers_a587c1356d4e780d41a96cdbbee9c7fa9}
+Redireciona para a view de edição. 
+\begin{DoxyParams}{Parameters}
+{\em login} & \\
+\hline
+\end{DoxyParams}
+Verifica se a sessão está aberta.
+
+Caso esteja, carrega a login\-\_\-model.
+
+Checa o privilegio do usuário.
+
+Caso Admin, redireciona para a view edit\-\_\-form\-\_\-view.
+
+Caso Manager, checa se o cadastro a ser editado é do mesmo nível ou a baixo do usuario, se sim, redireciona para a edit\-\_\-form\-\_\-view.
+
+Caso Worker, não permite o redirecionamento. \hypertarget{classMembers_a97543c7a9581814294ca85ccba384b64}{\index{Members@{Members}!get\-All@{get\-All}}
+\index{get\-All@{get\-All}!Members@{Members}}
+\subsubsection[{get\-All}]{\setlength{\rightskip}{0pt plus 5cm}Members\-::get\-All (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMembers_a97543c7a9581814294ca85ccba384b64}
+Mostrar os membros cadastrados, mostrando o nome, lattes, área e privilegio. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+Verifica se a sessão está aberta.
+
+Caso esteja, carrega a login\-\_\-model.
+
+Analisa o privilegio do usuario. Redireciona para a members\-\_\-list\-\_\-view. Mostra os membros. \hypertarget{classMembers_a82f4446426e827d31bb951375ce64511}{\index{Members@{Members}!validate\-Member@{validate\-Member}}
+\index{validate\-Member@{validate\-Member}!Members@{Members}}
+\subsubsection[{validate\-Member}]{\setlength{\rightskip}{0pt plus 5cm}Members\-::validate\-Member (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMembers_a82f4446426e827d31bb951375ce64511}
+
+
+Analisa se os dados informados no cadastro de novos membros são validos. 
+
+Analisa se a imagem enviada está nos formatos gif$\vert$jpg$\vert$png e é menor que 4mb. realiza a criptografia do nome da imagem.
+
+Analisa de os dados estão conforme o padrão. Analisa se os campos obrigatorios foram preenchidos.
+
+Caso todos os dados informados estejam ok, carrega a members\-\_\-model.
+
+Caso não tenham o upload de uma imagem, é gravado no banco uma imagem padrão.
+
+Caso os dados tenham sido gravados corretamente no banco, é mostrado uma mensagem de sucesso. \hypertarget{classMembers_a51f276a9b719cfb75b76c74806d2ece1}{\index{Members@{Members}!validate\-Update@{validate\-Update}}
+\index{validate\-Update@{validate\-Update}!Members@{Members}}
+\subsubsection[{validate\-Update}]{\setlength{\rightskip}{0pt plus 5cm}Members\-::validate\-Update (
+\begin{DoxyParamCaption}
+\item[{}]{\$login}
+\end{DoxyParamCaption}
+)}}\label{classMembers_a51f276a9b719cfb75b76c74806d2ece1}
+Analisa se o cadastro editado contém dados validos. 
+\begin{DoxyParams}{Parameters}
+{\em login} & \\
+\hline
+\end{DoxyParams}
+Caso se tenha ocorrido a edição da imagem, se grava a imagem anteriormente já utilizada.
+
+Caso não tenha ocorrido a edição da senha, se greve a senha anteriormente já utilizada.
+
+Casos os dados estejam ok, a members\-\_\-model é carregada.
+
+Caso os dados tenham sidos editados corretamente, é mostrada uma mensagem de sucesso. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+application/controllers/\hyperlink{members_8php}{members.\-php}\end{DoxyCompactItemize}

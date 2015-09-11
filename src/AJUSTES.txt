@@ -1,0 +1,6 @@
+- excluir do banco tbm
+- editar e excluir apenas niveis iguais ou inferiores ao seu
+- não permitir auto exclusão (?)
+- senha na edição 
+
+- confirmar exclusão

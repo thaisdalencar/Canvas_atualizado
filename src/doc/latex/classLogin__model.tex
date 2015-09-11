@@ -1,0 +1,72 @@
+\hypertarget{classLogin__model}{\section{Login\-\_\-model Class Reference}
+\label{classLogin__model}\index{Login\-\_\-model@{Login\-\_\-model}}
+}
+
+
+realização do login e logout.  
+
+
+Inheritance diagram for Login\-\_\-model\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLogin__model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLogin__model_ad77c9bf41acd559ece8594aba412f515}{validate\-User} (\$email, \$password)
+\begin{DoxyCompactList}\small\item\em Valida o usuario. \end{DoxyCompactList}\item 
+\hyperlink{classLogin__model_a2caeb6464acaa460860fd51b8a0ea6b2}{get\-User\-Data} (\$email)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+realização do login e logout. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classLogin__model_a2caeb6464acaa460860fd51b8a0ea6b2}{\index{Login\-\_\-model@{Login\-\_\-model}!get\-User\-Data@{get\-User\-Data}}
+\index{get\-User\-Data@{get\-User\-Data}!Login_model@{Login\-\_\-model}}
+\subsubsection[{get\-User\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Login\-\_\-model\-::get\-User\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)}}\label{classLogin__model_a2caeb6464acaa460860fd51b8a0ea6b2}
+Busca os dados do usuario. 
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+Os dados obtidos no banco criam o objeto Member
+
+\begin{DoxyReturn}{Returns}
+member 
+\end{DoxyReturn}
+\hypertarget{classLogin__model_ad77c9bf41acd559ece8594aba412f515}{\index{Login\-\_\-model@{Login\-\_\-model}!validate\-User@{validate\-User}}
+\index{validate\-User@{validate\-User}!Login_model@{Login\-\_\-model}}
+\subsubsection[{validate\-User}]{\setlength{\rightskip}{0pt plus 5cm}Login\-\_\-model\-::validate\-User (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)}}\label{classLogin__model_ad77c9bf41acd559ece8594aba412f515}
+
+
+Valida o usuario. 
+
+Procura o email.
+
+Procura a senha.
+
+Pega dados da tabela Cadastros onde há esse login e senha.
+
+Confirma se há 1 registro para esses dados no banco.
+
+Caso verdadeiro\-: \begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+application/models/\hyperlink{login__model_8php}{login\-\_\-model.\-php}\end{DoxyCompactItemize}

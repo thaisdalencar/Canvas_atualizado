@@ -1,0 +1,117 @@
+.capitalize{
+	text-transform: capitalize;
+}
+.navbarLogoAnchor{
+	padding:0 0 0 8px !important;
+}
+.navbarLogoAnchor img{
+	width: 48px;
+}
+a{
+	text-decoration: none;
+	color: #191919;
+}
+a:hover{
+	text-decoration: none;
+	color: #191919;
+}
+#addbutton{
+	margin-bottom: 20px;
+}
+
+.centralizaHorizontal {
+    vertical-align: middle !important;
+}
+.membersTableImage{
+	max-height: 42px;
+}
+
+.centralizaTudo *{
+	text-align: center !important; 
+}
+.capitalize{
+	text-transform: capitalize;
+}
+a > span{
+	color: #333333;
+	font-size: 130%;
+	margin-left: 5px;
+}
+#alerta{
+	color: red;
+}
+
+/*
+    Canvas
+
+*/
+.pmc-slot img{
+	max-width: 99%;
+	height: 40px;
+}
+.pmc-slot{
+	background-color: white;
+	margin-bottom: 15px;
+	margin-right: -12px;
+	margin-left: -12px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #999999;
+}
+
+.pmc-slot textarea{
+	margin: 0;
+	padding: 0;
+	width: 99.5%;
+	resize: none;
+	height: 120px;
+	border: 1px solid #CCC;
+}
+
+.textareaRoxo{
+    background-color:#c3b4d0;
+    font-weight:bold;
+}
+.textareaAmarelo{
+    background-color:#dcc277;
+    font-weight:bold;
+}
+
+#textarea_verde{
+    background-color:#97c77d;
+    font-weight:bold;
+}
+.textareaVerde{
+    background-color:#97c77d;
+    font-weight:bold;
+}
+#textarea_azul{
+    background-color:#acc2d5;
+    font-weight:bold;
+}
+#textarea_azul1{
+    background-color:#acc2d5;
+    font-weight:bold;
+}
+#textarea_azul2{
+    background-color:#acc2d5;
+    font-weight:bold;
+}
+.textareaAzul{
+	background-color:#aec6cf;
+    font-weight:bold;
+}
+.textareaVermelho{
+    background-color:#d6b7ab;
+    font-weight:bold;
+}
+#txtRequisitos{
+	height: 297px;
+}
+.dados{
+	width: 50%;
+	float: left;
+}
+#bordaCanvas{
+	border: 2px solid #acc2d5;
+	padding: 10px;
+}
